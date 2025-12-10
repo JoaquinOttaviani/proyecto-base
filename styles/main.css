@@ -30,7 +30,7 @@ body{
     height: 100vh;
     overflow: hidden;
      }
-
+/* Aside styles */
 aside{
     background-color:var(--grey-900);
     color: white;
@@ -86,5 +86,52 @@ width: 20px;
 .actions button:hover{
     background-color: var(--grey-700);
     transform: translateY(-4px);
+}
 
+/* serch input */
+.search{
+    background-color:var(--grey-800);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 5px;
+    
+}
+.search form input{
+    background-color: var(--grey-700);
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+}
+
+.search input:focus{
+    outline: 1px solid --grey-700;
+}
+
+
+.chat ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-chat{
+    background-color: var(--grey-900);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    }
+.user-chat img{
+    border-radius: 50%;
+    width: 60px;
+}
+
+.user-chat:hover{
+    background-color:var(--grey-700);
+    cursor: pointer;
 }
