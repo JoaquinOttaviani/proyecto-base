@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <section class="app">
+        <aside>
+            <header>
+                <div class="profile">
+                    <img src="https://avatars.githubusercontent.com/u/246489876?v=4" alt="foto de perfil">
+                    <h2>Mi cuenta</h2>
+                </div>
+                <div class="actions">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 512 512"><circle cx="256" cy="272" r="64" fill="currentColor"/><path fill="currentColor" d="M432 144h-59c-3 0-6.72-1.94-9.62-5l-25.94-40.94a15.5 15.5 0 0 0-1.37-1.85C327.11 85.76 315 80 302 80h-92c-13 0-25.11 5.76-34.07 16.21a15.5 15.5 0 0 0-1.37 1.85l-25.94 41c-2.22 2.42-5.34 5-8.62 5v-8a16 16 0 0 0-16-16h-24a16 16 0 0 0-16 16v8h-4a48.05 48.05 0 0 0-48 48V384a48.05 48.05 0 0 0 48 48h352a48.05 48.05 0 0 0 48-48V192a48.05 48.05 0 0 0-48-48M256 368a96 96 0 1 1 96-96a96.11 96.11 0 0 1-96 96"/></svg>
+                    </button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 512 512"><path fill="currentColor" d="M0 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm323.8 106.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6l-26.5-33.1c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4S78.8 416 88 416h336c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7zM112 192a48 48 0 1 0 0-96a48 48 0 1 0 0 96"/></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M14.82 1H9.18l-.647 3.237a8.5 8.5 0 0 0-1.52.88l-3.13-1.059l-2.819 4.884l2.481 2.18a8.6 8.6 0 0 0 0 1.756l-2.481 2.18l2.82 4.884l3.129-1.058c.472.342.98.638 1.52.879L9.18 23h5.64l.647-3.237a8.5 8.5 0 0 0 1.52-.88l3.13 1.059l2.82-4.884l-2.482-2.18a8.6 8.6 0 0 0 0-1.756l2.481-2.18l-2.82-4.884l-3.128 1.058a8.5 8.5 0 0 0-1.52-.879zM12 16a4 4 0 1 1 0-8a4 4 0 0 1 0 8"/></svg></button>
+                </div>
+            </header>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Buscar un contacto o iniciar un chat nuevo">
+                </form>
+            </div>
+            <section class="chat">
+                <div>
+                    <ul>
+                        <li class="user-chat">
+                            <img src="https://placehold.co/100x100" alt="Foto de perfil de maria lopez">
+                            <div>
+                                <h3>Maria Lopez</h3>
+                                <p>Nos vemos a las 18 ?</p>
+                            </div>
+                            
+                        </li>
+                        <li class="user-chat">
+                            <img src="https://placehold.co/100x100" alt="Foto de perfil de maria lopez">
+                            <div>
+                                <h3>Grupo: Proyecto </h3>
+                                <p>push a main - revision </p>
+                            </div>
+                            
+                        </li>
+                        <li class="user-chat">
+                            <img src="https://placehold.co/100x100" alt="Foto de perfil de maria lopez">
+                            <div>
+                                <h3>Soporte</h3>
+                                <p>Tu factura esta lista</p>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </aside>
+        <div class="chat-panel">
+            <header class="chat-header">
+                <img src="https://placehold.co/100x100" alt="Foto de perfil">
+                <div>
+                    <h3>Maria Lopez</h3>
+                    <p>En linea</p>
+                </div>
+
+            </header>
+            <Section class="messages">
+                <div class="massage you">
+                    <p class="content">Hola ¿queres venir por un cafe?</p>
+                    <p class="time">14:12</p>
+                </div>
+                <div class="massage me">
+                    <p class="content">Si,perfecto. ¿a las 18 te viene bien?</p>
+                    <p class="time">14:13</p>
+                </div>
+                <div class="massage you">
+                    <p class="content">Dale, en la plaza entonces 😜</p>
+                    <p class="time">14:14</p>
+                </div>
+            </Section>
+            <footer>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701"><path fill="currentColor" d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129"/></svg>
+                </button>
+                <form >
+                    <textarea type="text" placeholder="Escribe un mensaje"> </textarea>
+                </form>
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/></svg></button>
+                
+            </footer>
+
+        </div>
+
+    </section>
 </body>
 </html>
