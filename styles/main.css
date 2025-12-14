@@ -28,7 +28,7 @@ body{
     background-color: white;
     display: grid;
     grid-template-columns: 320px 1fr;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     border-radius: 10px;
      }
@@ -169,7 +169,7 @@ width: 20px;
     padding: 20px;
     flex: 1;
     gap: 20px;
-    overflow: scroll;
+    overflow: auto;
     
 }
 
