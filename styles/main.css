@@ -6,10 +6,12 @@
 }
 
 :root {
-  --primary-color: #0a9c6f;
+  ---primary-color: #0a9c6f;
   --grey-900: #0d1919;
-  --grey-800: #4e4e4e;
-  --grey-700: #d3d3d3;
+  --grey-800: #121b22;
+  --grey-600: #1f2c34;
+  --grey-700: #9f9fa1;
+  --grey-500: #dfdfe1;
   --grey-300: #fefff6;
   --grey-200: #f1f2f6;
   --green-400: #138b80;
@@ -19,19 +21,21 @@
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: var(---primary-color);
     padding: 40px;
     }
 
 .app{
     max-width: 1100px;
     background-color: white;
+    margin: auto;
     display: grid;
     grid-template-columns: 320px 1fr;
     height: 90vh;
     overflow: hidden;
     border-radius: 10px;
-     }
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
 /* Aside styles */
 aside{
     background-color:var(--grey-900);
@@ -58,11 +62,11 @@ aside header {
 }
 
 .profile img {
-    width: 50px;
+    width: 50%;
     border-radius: 50%;
 }
 .profile h2 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .actions{
@@ -74,7 +78,7 @@ aside header {
 .actions button {
     padding: 7px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
    background-color: var(--grey-800);
    color: var(--grey-300);
@@ -140,7 +144,7 @@ width: 20px;
 
 
 .chat-header{
-    background-color: var(--grey-700);
+    background-color: var(--grey-300);
     display: flex;
     border-bottom: 1px solid grey;
     padding: 10px;
@@ -174,7 +178,7 @@ width: 20px;
 }
 
 .message{
-    background-color: var(--grey-200);
+    background-color: var(--grey-300);
     padding: 10px;
     width: 60%;
     border-radius: 10px;
@@ -200,7 +204,7 @@ width: 20px;
 /** footer style**/
 footer{
     display: flex;
-    background-color: var(--grey-700) ;
+    background-color: var(--grey-500) ;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
@@ -255,7 +259,7 @@ footer textarea:focus{
 
 
 footer .send{
-    background-color: var(--green-400);
+    background-color: rgb(45, 202, 122);
     border: none;
     border-radius: 20px;
     color: wheat;
