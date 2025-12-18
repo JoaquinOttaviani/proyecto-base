@@ -61,3 +61,5 @@ Se utiliza la fuente **Roboto**, una fuente sans-serif moderna y legible, para t
 - Se emplean **iconos SVG** para representar acciones clave como enviar mensajes, adjuntar archivos, y otras interacciones.
 - Los botones cuentan con transiciones y animaciones sutiles para mejorar la interacción (por ejemplo, al pasar el cursor sobre ellos).
 
+## Git Hub
+Se creo un repositorio en el cual se encuentran los diferentes commits. Cada uno de ellos refleja un cambio específico en el desarrollo, lo que facilita el seguimiento del progreso y la colaboración en el proyecto.
