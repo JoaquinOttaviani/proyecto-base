@@ -30,6 +30,9 @@ Para visualizar el proyecto, simplemente abre el archivo `index.html` en cualqui
 
 El diseño de la aplicación se organiza en una estructura de dos columnas utilizando **CSS Grid**, optimizando el espacio disponible en pantallas grandes y adaptándose a dispositivos más pequeños a través de **media queries**.
 
+![imagen del proyecto terminado](./Assets/image.png)
+
+
 ### Componentes Principales:
 1. **Panel Lateral (Aside)**:
    - Muestra el perfil del usuario, con una imagen de perfil y nombre.
