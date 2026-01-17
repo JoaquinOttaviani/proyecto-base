@@ -103,7 +103,7 @@ width: 20px;
     padding: 5px;
     
 }
-.search form input{
+.search input{
     background-color: var(--grey-700);
     width: 100%;
     display: block;
