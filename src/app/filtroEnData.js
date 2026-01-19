@@ -23,6 +23,12 @@ const chatsData = [
 
 const renderChats = (list) => {
     $listChat.innerHTML = ""
+   
+   if(list.length === 0) {
+    $listChat.innerHTML = "<li class= 'empty'> No hay chat para mostrar</li>"
+   }
+   
+   
     list.forEach((chat) => { 
           $listChat.innerHTML += `
         <li class="user-chat">
@@ -40,7 +46,9 @@ const renderChats = (list) => {
 
 const searchChats = () => { 
     const nameSearch = $search.value.toLowerCase()
-    
+    const filteredchat = chatsData.filter((chat) => chat.name.toLowerCase().includes(nameSearch))
+
+    renderChats(filteredchat) 
     }
 
 $search.addEventListener("input", searchChats)
