@@ -64,7 +64,8 @@ const sendMessage = (event) => {
       me:true,
       hour: now.getHours() + ":" + now.getMinutes()
     }
-    console.log(newmessage)
+    messages.push(newmessage) 
+    renderMessages(messages)
   } else{
     console.log("precionaste la tecla,",event.key)
   }
