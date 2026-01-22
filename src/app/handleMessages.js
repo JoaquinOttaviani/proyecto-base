@@ -27,17 +27,34 @@ const messages = [
       }
 ]
 
-const renderMessages = (list) => {
+const renderMessages = (listofMessages) =>{
   $listMessages.innerHTML = ""
+ 
+  listofMessages.forEach((message) => {
+    let className
+    if(message.me) {
+      className = "me"
+    } else {classNAme = ""
 
-  list.forEach((message) => {
-    $listMessages.innerHTML +=`
-    <div class="message ${message.me === true ? 'me': ""}">
-                    <p class="content">${message.text}</p>
-                    <p class="time">${message.hour}</p>
-                </div>`
-  })
+    }
+
+    $listMessages.innerHTML += `
+    <div class="message ${className}">
+      <p class="content">${message.text}</p>
+      <p class="time">${message.hour}</p>
+    </div>`
+
+    })
 }
+
+//   list.forEach((message) => {
+//     $listMessages.innerHTML +=`
+//     <div class="message ${message.me === true ? 'me': ""}">
+//                     <p class="content">${message.text}</p>
+//                     <p class="time">${message.hour}</p>
+//                 </div>`
+//   })
+// }
 
 const sendMessage = (event) => {
   const now = new Date()
@@ -52,6 +69,8 @@ const sendMessage = (event) => {
     console.log("precionaste la tecla,",event.key)
   }
 }
+
+
 // $formMessage.addEventListener("submit",sendMessage)
 $message.addEventListener("keydown", (e) =>{
   sendMessage(e)
